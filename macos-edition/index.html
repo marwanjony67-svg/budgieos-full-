@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101a38">
+  <title>BudgieOS Mac Edition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wallpaper"></div>
+  <header class="menubar">
+    <div class="brand"><span class="budgie">B</span><strong>BudgieOS</strong></div>
+    <nav><span>Desktop</span><span>File</span><span>Window</span><span>Help</span></nav>
+    <div class="status"><span>● Wi-Fi</span><span>◐</span><span id="clock">--:--</span></div>
+  </header>
+  <main class="desktop" aria-label="BudgieOS desktop">
+    <button class="desktop-icon" data-app="files"><span>📁</span>Files</button>
+    <button class="desktop-icon" data-app="about"><span>💻</span>About BudgieOS</button>
+    <section class="window" id="welcome" aria-label="Welcome window">
+      <div class="titlebar"><div class="traffic"><button class="close" aria-label="Close"></button><i></i><i></i></div><b>Welcome to BudgieOS</b><span></span></div>
+      <div class="welcome-content">
+        <div class="hero-logo">B</div>
+        <p class="eyebrow">A fresh desktop experience</p>
+        <h1>Welcome to BudgieOS.</h1>
+        <p>Your desktop. Your ideas. Your way.</p>
+        <div class="actions"><button class="primary" data-app="files">Explore Files</button><button data-app="settings">Settings</button></div>
+        <small>Mac Edition · UI Prototype 1.0</small>
+      </div>
+    </section>
+    <section class="window hidden" id="files" aria-label="Files window">
+      <div class="titlebar"><div class="traffic"><button class="close" aria-label="Close"></button><i></i><i></i></div><b>Files</b><span></span></div>
+      <div class="file-layout"><aside><p>FAVOURITES</p><b>⌂　Home</b><b>◷　Recent</b><b>☆　Starred</b></aside><div class="file-grid"><div>📁<small>Documents</small></div><div>📁<small>Downloads</small></div><div>🖼️<small>Pictures</small></div><div>🎵<small>Music</small></div><div>🎬<small>Videos</small></div></div></div>
+    </section>
+    <section class="window hidden" id="settings" aria-label="Settings window">
+      <div class="titlebar"><div class="traffic"><button class="close" aria-label="Close"></button><i></i><i></i></div><b>Settings</b><span></span></div>
+      <div class="settings-content"><h2>System Settings</h2><p>Personalize your BudgieOS desktop.</p><label>Appearance <select id="appearance"><option value="dark">Midnight</option><option value="light">Light</option></select></label><label>Accent <select id="accent"><option value="blue">Ocean blue</option><option value="purple">Purple</option><option value="green">Mint</option></select></label></div>
+    </section>
+    <section class="window hidden" id="terminal" aria-label="Terminal window">
+      <div class="titlebar"><div class="traffic"><button class="close" aria-label="Close"></button><i></i><i></i></div><b>Terminal — Demo</b><span></span></div>
+      <div class="terminal-body"><p>BudgieOS Terminal Demo · commands are simulated</p><div id="terminal-output">Welcome! Type <b>help</b> to see demo commands.</div><form id="terminal-form"><label for="command">BudgieOS--$</label><input id="command" autocomplete="off" spellcheck="false" aria-label="Demo command"></form></div>
+    </section>
+    <section class="window hidden" id="about" aria-label="About BudgieOS window">
+      <div class="titlebar"><div class="traffic"><button class="close" aria-label="Close"></button><i></i><i></i></div><b>About BudgieOS</b><span></span></div>
+      <div class="settings-content"><div class="hero-logo small-logo">B</div><h2>BudgieOS Mac Edition</h2><p>Version 1.0 · Desktop UI prototype</p><p>This is an original browser-based desktop concept, not Apple's macOS.</p></div>
+    </section>
+  </main>
+  <footer class="dock" aria-label="Application dock">
+    <button data-app="files" aria-label="Files">📁</button><button data-app="settings" aria-label="Settings">⚙️</button><button data-app="terminal" aria-label="Terminal">⌨️</button><button data-app="about" aria-label="About">💻</button>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
