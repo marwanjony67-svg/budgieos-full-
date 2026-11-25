@@ -1,0 +1,12 @@
+{
+  "FileVersion": 3,
+  "Category": "Games",
+  "Description": "BudgieOS original open-world driving and exploration game",
+  "Modules": [
+    {
+      "Name": "BudgieGTA6",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    }
+  ]
+}
